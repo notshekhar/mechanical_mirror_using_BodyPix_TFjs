@@ -15,12 +15,20 @@ class cell{
             color = "rgb(255,255,255, 1)"
             strokeColor = 'black'
         }
+        //rectangular boxes
+        // ctx.beginPath()
+        // ctx.fillStyle = color
+        // ctx.strokeStyle = strokeColor
+        // ctx.rect(this.i*w, this.j*h, w, h)
+        // ctx.fill()
+        // ctx.stroke()
+        
+        //circular
         ctx.beginPath()
         ctx.fillStyle = color
         ctx.strokeStyle = strokeColor
-        ctx.rect(this.i*w, this.j*h, w, h)
-        ctx.fill()
+        ctx.arc(this.i*w+(w/2), this.j*h+(h/2), w/2, 0, 2 * Math.PI)
         ctx.stroke()
-
+        ctx.fill()
     }
 }
